@@ -12,7 +12,7 @@ const SignInScreen = () => {
         email: '',
         password: '',
     })
-    const { signInUser } = useAuth()
+    
 
     // handle change
     const handleChange = (e) => {
@@ -25,11 +25,7 @@ const SignInScreen = () => {
         })
 
     }
-    //handle submit form 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        await signInUser(userInput.email, userInput.password)
-    }
+   
 
     //form inputs
     const Inputs = [
@@ -53,7 +49,7 @@ const SignInScreen = () => {
                         {/* logo  */}
                         <Brand />
                         {/* sign in form  */}
-                        <form className="bg-white w-3/5 mt-6 p-4 rounded-lg shadow-lg" onSubmit={handleSubmit}>
+                        <form className="bg-white w-3/5 mt-6 p-4 rounded-lg shadow-lg" >
                             <div className="flex flex-col space-y-6">
                                 {Inputs.map(input => (
                                     <TextField

@@ -11,30 +11,21 @@ const override = css`
 `;
 
 const PublicRoute = ({ children, ...rest }) => {
-    const { user, isLoading } = useAuth();
-    if (isLoading) {
-        return (
-            <div className="flex flex-col items-center justify-center h-screen">
-                <GridLoader color="#1d4ed8" css={override} size={25} />
+    // const { user, isLoading } = useAuth();
+    // if (isLoading) {
+    //     return (
+    //         <div className="flex flex-col items-center justify-center h-screen">
+    //             <GridLoader color="#1d4ed8" css={override} size={25} />
 
-            </div>
-        )
-    }
+    //         </div>
+    //     )
+    // }
 
     return (
         <Route
             {...rest}
-            render={({ location }) =>
-                !user.displayName ? (
-                    children
-                ) : (
-                    <Redirect
-                        to={{
-                            pathname: "/",
-                            state: { from: location }
-                        }}
-                    />
-                )
+            render={({ location }) => children
+                
             }
         />
     )

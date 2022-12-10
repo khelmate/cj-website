@@ -11,7 +11,7 @@ const Navbar = () => {
     const [mobileNav, setMobileNav] = useState(false)
 
     const menu = [
-        { id: 1, text: 'About Us', to: '/cj-website' },
+        { id: 1, text: 'About Us', to: '/cj-website/' },
         { id: 2, text: 'Core Areas', to: '/cj-website/products' },
         { id: 3, text: 'Services', to: '/cj-website/services' },
         { id: 4, text: 'Calibration', to: '/cj-website/calibration' },
