@@ -5,14 +5,14 @@ import "swiper/components/pagination/pagination.min.css";
 import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper/core';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
-import useFetch from '../../hooks/useFetch';
 import Heading from '../Heading';
 import Service from './Service';
+import data from '../../database/services.json'
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 
 const Services = () => {
-    const [data] = useFetch('services');
+    
 
     return (
         <section className="max-w-screen-xl mx-auto px-6 py-6 pb-24">

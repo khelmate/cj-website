@@ -5,14 +5,12 @@ import Rating from 'react-rating';
 import Fade from 'react-reveal/Fade';
 import { Link, useParams } from 'react-router-dom';
 import swal from 'sweetalert';
-import useFetch from '../hooks/useFetch';
 import useOrder from '../hooks/useOrder';
-
+import data from '../database/products.json'
 
 const ProductDetailScreen = () => {
     const [disabled, setDisabled] = useState(false);
     const { title } = useParams();
-    const [data] = useFetch('products');
     const { handleCart , orders } = useOrder();
 
     return (

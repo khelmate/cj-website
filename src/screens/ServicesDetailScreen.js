@@ -2,11 +2,11 @@ import React from 'react';
 import { BsArrowLeft } from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 import { Link, useParams } from 'react-router-dom';
-import useFetch from '../hooks/useFetch';
+import data from '../database/services.json'
 
 const ServicesDetailScreen = () => {
     const { title } = useParams();
-    const [data] = useFetch('services');
+
 
     return (
         <section className="max-w-screen-xl py-24 mx-auto px-6">

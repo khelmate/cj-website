@@ -1,11 +1,11 @@
 import React from 'react';
 import Bounce from 'react-reveal/Bounce';
-import useFetch from '../../hooks/useFetch';
 import Heading from '../Heading';
 import Product from './Product';
+import data from '../../database/products.json'
 
 const Products = () => {
-    const [data] = useFetch('products');
+    
     
     return (
         <section className="max-w-screen-xl mx-auto px-6 py-6 pb-24">

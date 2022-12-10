@@ -5,13 +5,13 @@ import "swiper/components/pagination/pagination.min.css";
 import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper/core';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
-import useFetch from '../../hooks/useFetch';
 import Heading from '../Heading';
 import Testimonial from './Testimonial';
+import data from '../../database/testimonial.json'
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const Testimonials = () => {
-    const [data] = useFetch('testimonial')
+    
     return (
         <section className="max-w-screen-xl mx-auto px-6 pb-24">
             {/* heading  */}
