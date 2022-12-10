@@ -1,4 +1,5 @@
 {
+  "homepage": "https://khelmate.github.io/cj-website",
   "name": "healthcare-related-website-19smabtahinoor",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +11,7 @@
     "autoprefixer": "^9",
     "firebase": "^9.1.3",
     "firebase-tools": "^1.2.0",
+    "gh-pages": "^4.0.0",
     "postcss": "^7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -28,7 +30,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
