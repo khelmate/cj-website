@@ -17,9 +17,9 @@ SwiperCore.use([Pagination, Autoplay]);
 const Slider = () => {
 
     const drugs = [
-        { id: 1, img: '/assets/banner/drug-1.jpg' },
-        { id: 2, img: '/assets/banner/drug-2.jpg' },
-        { id: 3, img: '/assets/banner/drug-4.jpg' },
+        { id: 1, img: 'assets/banner/drug-1.jpg' },
+        { id: 2, img: 'assets/banner/drug-2.jpg' },
+        { id: 3, img: 'assets/banner/drug-4.jpg' },
     ]
     return (
         <div className="w-full">

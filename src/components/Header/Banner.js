@@ -27,7 +27,7 @@ Strong engineering professional franchise which we provide best solution to engi
 
                 <Fade right>
                     <div className="order-1 lg:order-2">
-                        <img src="/assets/banner/banner.png" alt="banner" />
+                        <img src="assets/banner/banner.png" alt="banner" />
                     </div>
                 </Fade>
             </div>
