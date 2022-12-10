@@ -39,7 +39,7 @@ const SignInScreen = () => {
                 {/* image  */}
                 <Bounce left>
                     <div className="hidden md:flex lg:flex flex-col justify-center items-center w-full h-screen">
-                        <img className="w-4/4 mx-auto" src="assets/signin.png" alt="signin" />
+                        <img className="w-4/4 mx-auto" src="./assets/signin.png" alt="signin" />
                     </div>
                 </Bounce>
 
