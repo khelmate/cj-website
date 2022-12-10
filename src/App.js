@@ -23,14 +23,14 @@ const App = () => {
         <OrderProvider>
           <Navbar />
           <Switch>
-            <Route exact path="/"><HomeScreen /></Route>
-            <Route exact path="/contact"><ContactScreen /></Route>
-            <PublicRoute path="/signup"><SignUpScreen /></PublicRoute>
-            <PublicRoute path="/signin"><SignInScreen /></PublicRoute>
-            <PrivateRoute exact path="/services/:title"><ServicesDetailScreen /></PrivateRoute>
-            <Route exact path="/products/"><ProductsScreen /></Route>
-            <PrivateRoute exact path="/products/:title"><ProductDetailScreen /></PrivateRoute>
-            <PrivateRoute exact path="/orders"><OrderScreen /></PrivateRoute>
+            <Route exact path="/cj-website"><HomeScreen /></Route>
+            <Route exact path="/cj-website/contact"><ContactScreen /></Route>
+            <PublicRoute path="/cj-website/signup"><SignUpScreen /></PublicRoute>
+            <PublicRoute path="/cj-website/signin"><SignInScreen /></PublicRoute>
+            <PrivateRoute exact path="/cj-website/services/:title"><ServicesDetailScreen /></PrivateRoute>
+            <Route exact path="/cj-website/products/"><ProductsScreen /></Route>
+            <PrivateRoute exact path="/cj-website/products/:title"><ProductDetailScreen /></PrivateRoute>
+            <PrivateRoute exact path="/cj-website/orders"><OrderScreen /></PrivateRoute>
             <Route path="*"><ErrorScreen /></Route>
           </Switch>
           <Footer />
