@@ -13,7 +13,7 @@ const Banner = () => {
                     <div className="order-1 lg:order-1 flex flex-col justify-center h-full space-y-6">
 
                         <div className="flex flex-col space-y-2">
-                            <img className="w-24" src="../../../assets/services/004-tools.png" alt="banner" />
+                            <img className="w-24" src="assets/services/004-tools.png" alt="banner" />
                             <h1 className="poppins text-gray-700 font-semibold text-3xl lg:text-3xl leading-relaxed">One place for<br /> <span className="text-5xl">pharma engineering</span></h1>
                             <p className="text-gray-500 text-light text-sm">Welcome to CJ Engineering Solutions providing Reliable Engineering Solutions to the Pharmaceutical, Healthcare, F&B, Cosmetics & Other Industries. industry for delivering high quality products with prompt service and affordable price. 
 Franchise with best engineering professional in pharmaceutical industry to provide best engineering solutions and practices. 
@@ -27,7 +27,7 @@ Strong engineering professional franchise which we provide best solution to engi
 
                 <Fade right>
                     <div className="order-1 lg:order-2">
-                        <img src="../../../assets/banner/banner.png" alt="banner" />
+                        <img src="/assets/banner/banner.png" alt="banner" />
                     </div>
                 </Fade>
             </div>
